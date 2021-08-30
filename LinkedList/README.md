@@ -6,7 +6,7 @@
 
 - A Linked List look similar like this
 
-![Link List](https://en.wikipedia.org/wiki/Linked_list#/media/File:Singly-linked-list.svg)
+![Link List](https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2013/03/Linkedlist.png)
 
 ## Types of Linked List
 - Singly Linked List
