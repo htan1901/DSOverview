@@ -51,8 +51,7 @@ After we have Node and List, we need to add Node to List to complete the Linked 
 ```cpp
 //add to the back of the list
 void addNode(List &list, Node *added_node) {
-	if(isEmpty(list))
-	{
+	if(isEmpty(list)) {
 		list.head = added_node;
 		list.tail = added_node;
 		return;
