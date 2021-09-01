@@ -48,8 +48,8 @@ void initList(List list) {
 }
 ```
 After we have Node and List, we need to add Node to List to complete the Linked List.\
-*How to add a node to back of the list*
-![add Tail](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/types-of-linked-list-and-operation-on-linked-list-insert-end-684624578d427ddd.png)
+*How to add a node to back of the list*\
+![add Tail](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/types-of-linked-list-and-operation-on-linked-list-insert-end-684624578d427ddd.png)\
 *Implementation*
 ```cpp
 //add to the back of the list
@@ -63,8 +63,8 @@ void addTail(List &list, Node *new_node) {
 	list.tail = new_node;
 }
 ```
-*How to add a node to front of the list*
-![add Head](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/types-of-linked-list-and-operation-on-linked-list-insert-begin-c5d6d8aebb19c584.png)
+*How to add a node to front of the list*\
+![add Head](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/types-of-linked-list-and-operation-on-linked-list-insert-begin-c5d6d8aebb19c584.png)\
 *Implementation*
 ```cpp
 //add to the front of the list
