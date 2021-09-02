@@ -1,5 +1,5 @@
 # Linked List
-*This post may containts some grammar mistakes, I will very appreciate if you correct me.*
+*This post may containts some grammar mistakes, we will very appreciate if you correct us.*
 
 ## Definition
 
@@ -15,16 +15,16 @@
 - Circular Linked List
 - *and so on...*
 
->**For easy to understand, I only cover Singly Linked List in this post and I will use Linked List instead of Singly Linked List for shorten.**
+>**For easy to understand, We only cover Singly Linked List in this post and We will use Linked List instead of Singly Linked List for shorten.**
 ## Implementation Of Singly Linked List
-To start working with linked list, first we must to define a Node, assume that I want to store integer value in each Node so that I use `int data`.
+To start working with linked list, first We must to define a Node, assume that We want to store integer value in each Node so that We use `int data`.
 ```cpp
 struct Node {
 	int data;
 	Node* next;
 };
 ```
-Then we write a function to create a Node.
+Then We write a function to create a Node.
 ```cpp
 Node* createNode(int value) {
 	Node *new_node = new Node();
@@ -33,8 +33,8 @@ Node* createNode(int value) {
 	return new_node;
 }
 ```
-Next we define a Linked List.\
-To easy to working with Linked List, I define a list with two pointers point to the **first element** and the **last element** of the list.
+Next We define a Linked List.\
+To easy to working with Linked List, We define a list with two pointers point to the **first element** and the **last element** of the list.
 ```cpp
 struct List {
 	Node *head; //first element
@@ -47,7 +47,7 @@ void initList(List list) {
 	list.tail = NULL;
 }
 ```
-After we have Node and List, we need to add Node to List to complete the Linked List.\
+After We have Node and List, We need to add Node to List to complete the Linked List.\
 *How to add a node to back of the list*\
 ![add Tail](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/types-of-linked-list-and-operation-on-linked-list-insert-end-684624578d427ddd.png)\
 *Implementation*
@@ -80,7 +80,7 @@ void addHead(List &list, Node *new_node) {
 ```
 ## Basic Linked List Operations
 *Visit [here](https://visualgo.net/en/list) for linked list operations visuallization.*
-1. Traveral\
+1. Traversal\
 To traverse all the nodes.
 ```cpp
 //simply go through each node
