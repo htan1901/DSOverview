@@ -1,6 +1,6 @@
 /*
 *
-* @author: thantrannghiep
+* @author: ThanTranNghiep
 *
 */
 #include<bits/stdc++.h>

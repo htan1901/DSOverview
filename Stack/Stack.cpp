@@ -17,89 +17,64 @@ struct Stack
 
 typedef Node* node;
 
-void initStack(Stack t){
+void initStack(Stack t)
+{
     t.top=NULL;
 }
-node CreateNode(int x){
+
+node createNode(int value)
+{
     node n = (node)malloc(sizeof(Node));
-    if(n!=NULL){
-        n->Data=x;
+    if(n!=NULL)
+    {
+        n->Data=value;
         n->next=NULL;
     }
     return n;
 }
-// add element before top
-void push(Stack &t, node x){
-    if( t.top ==NULL ){
-        t.top=x;
+
+// add new_node on top of the stack
+void push(Stack &t, node new_node)
+{
+    if( t.top ==NULL )
+    {
+        t.top=new_node;
         return;
     }
-    x->next=t.top;
-    t.top=x;
+    new_node->next=t.top;
+    t.top=new_node;
 }
 
-// delete element top
-
-void pop(Stack &t){
-    if(t.top != NULL && t.top->next == NULL){
+//pop element out of stack
+void pop(Stack &t)
+{
+    if(t.top != NULL && t.top->next == NULL)
+    {
         free(t.top);
         t.top=NULL;
         return;
     }
-    if(t.top == NULL){
+    if(t.top == NULL)
+    {
         cout<<"\nError: Stack is empty !\n";
         return;
     }
-    else{
+    else
+    {
         node i=t.top->next;
         free(t.top);
         t.top=i;
     }
 }
 
-// check Stack empty
-
-bool Empty(Stack t){
+// check whether stack is empty
+bool isEmpty(Stack t)
+{
     return (t.top == NULL) ? false:true ;
 }
 
-// print the top element of the Stack
-int Top(Stack t){
+// get the top element of the Stack
+int top(Stack t)
+{
     return t.top->Data;
-}
-
-// add element to Stack
-
-void GetStack(Stack &t, int n){
-    for( int i=n ; i>0 ; i-- ){
-        cout<<"Stack[ "<<i<<" ] = ";
-        int temp;
-        cin>>temp;
-        node n =CreateNode(temp);
-        push(t,n);
-    }
-}
-
-// Display element in Stack
-
-void Display(Stack t){
-    cout<<endl;
-    node i =t.top;
-    while (i!=NULL)
-    {
-        cout<<i->Data<<" ";
-        i=i->next;
-    }
-    
-}
-int main(){
-    int n;
-    Stack t;
-    initStack(t);
-    cout<<"\nEnter n: ";         // Enter the number of element of the Stack
-    cin>>n;
-    GetStack(t,n);
-    Display(t);
-    cout<<"\n Top is : "<<Top(t);
-    return 0;
 }

@@ -1,5 +1,5 @@
 # Stack
-*This post may containts some grammar mistakes, I will very appreciate if you correct me.*
+*This post may containts some grammar mistakes, We will very appreciate if you correct us.*
 
 ## Definition
 Stack (Ngắn xếp) is a collection of data, its operations is performed in LIFO (Last In First Out) order.  
@@ -8,5 +8,3 @@ Stack (Ngắn xếp) is a collection of data, its operations is performed in LIF
 **In this post, We will use Linked List to implement Stack.**
 ## Implementation of Stack
 *We have implemented Linked List in the previous post, so We just reuse the code*
-...  
-The implementation of Stack will be updated later.
