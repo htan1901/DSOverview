@@ -85,10 +85,22 @@ int main(){
     initStack(t);
     cout<<"Number decimal: ";
     cin>>number;
+    cout<<"\n\tMenu\n";
+    cout<<"2.Binary\n16.Hexadecimal\n8.Octal";
     cout<<"\nBase_N : ";
     cin>>Base;
-    Convert(t,number,Base);
-    cout<<"\nNumber Decimal Convert to "<<Base<<" is : ";
+    switch (Base)
+    {
+    case 2: case 16: case 8:
+        Convert(t,number,Base);
+        cout<<"\nNumber Decimal Convert to "<<Base<<" is : ";
+        break;
+    
+    default:
+        cout<<"\nNhap sai!";
+        break;
+    }
+    
     Display(t);
     return 0;
 }
